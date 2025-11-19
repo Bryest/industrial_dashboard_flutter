@@ -59,7 +59,7 @@ class DashboardScreen extends ConsumerWidget {
                           ),
                           const SizedBox(width: 8),
                           CircleAvatar(
-                            backgroundColor: colorScheme.primary,
+                            backgroundColor: const Color.fromARGB(167, 200, 200, 255),
                             child: const Text('R'),
                           ),
                         ],
