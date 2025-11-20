@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:window_manager/window_manager.dart';
+//import 'package:window_manager/window_manager.dart';
 
 import 'core/theme/app_theme.dart';
 import 'core/theme/theme_notifier.dart';
@@ -9,8 +9,9 @@ import 'features/dashboard/presentation/screens/dashboard_screen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  // Windows Desktop Application settings
   // Initialize the desktop window controller
-  await windowManager.ensureInitialized();
+  /*await windowManager.ensureInitialized();
 
   WindowOptions windowOptions = const WindowOptions(
     minimumSize: Size(1200, 800),
@@ -23,7 +24,8 @@ void main() async {
     await windowManager.show();
     await windowManager.focus();
   });
-
+  */
+  
   runApp(const ProviderScope(child: IndustrialDashboard()));
 }
 
